@@ -4,23 +4,23 @@ class ZsxqCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.3/zsxq-cli_darwin_arm64.tar.gz"
-      sha256 "906ff6d86e6bb31df4e46d91efba18c8bfc7508639e87117a5cc29dc0ffac9ab"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.4/zsxq-cli_darwin_arm64.tar.gz"
+      sha256 "840ff3f4fc2e6e45ff8d1c117a10965314458f989d88b72b21a0cadbc7ab8f0e"
     end
     on_intel do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.3/zsxq-cli_darwin_amd64.tar.gz"
-      sha256 "ad097d3f7904241d7c8118ab3d5816c2b8da9569ca54edd412f05775e100641f"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.4/zsxq-cli_darwin_amd64.tar.gz"
+      sha256 "6a9c15bc19e2e29ebf67ba6f23ed098aa3dc56b4330ac509ff63439d2ead6817"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.3/zsxq-cli_linux_arm64.tar.gz"
-      sha256 "8ef7e910ed741eb1aa8d4fc73ec30ff85887815bbe84b4378ac4783bd7aa0f12"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.4/zsxq-cli_linux_arm64.tar.gz"
+      sha256 "5f73f6bdba5c5ad4077e5970a5a7987cb38b793b178f4a22c946d9f48e008032"
     end
     on_intel do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.3/zsxq-cli_linux_amd64.tar.gz"
-      sha256 "d8ff63f5288df8f905186cbd5b9d3c40d9f23531300466664e9ffee7302724a3"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/v0.4.4/zsxq-cli_linux_amd64.tar.gz"
+      sha256 "d53897e1d11ff2dd8e3f8e1abb2dc0241f9ec45ff7fae6a26106a4f36f63c814"
     end
   end
 
