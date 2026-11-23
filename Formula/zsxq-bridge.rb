@@ -1,30 +1,30 @@
-# Generated from packaged SHA256SUMS; source commit dc6e0cf8a9f3b72e8bc5fc1d4aef66ffaca5144e.
+# Generated from packaged SHA256SUMS; source commit 9a900aca03f44616075421ec125e8c0dede9a053.
 # The project owner selected Apache-2.0; LICENSE is included in release packages.
 class ZsxqBridge < Formula
   desc "Local capability bridge for ZSXQ agents"
   homepage "https://github.com/unnoo/homebrew-tap"
-  version "0.1.10"
+  version "0.1.12"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.10/zsxq-bridge_v0.1.10_darwin_arm64.tar.gz"
-      sha256 "6a6a49b01be81f84e9d5b32237556889cf5ba1e3247d30fe193f17cfc60a9c6f"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.12/zsxq-bridge_v0.1.12_darwin_arm64.tar.gz"
+      sha256 "22d66dea21c3894501c0617765899b0f346b00ba2959d0138f10a8158a9a903d"
     end
     on_intel do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.10/zsxq-bridge_v0.1.10_darwin_amd64.tar.gz"
-      sha256 "01376b1a1a1702ec886d15a3157bc3d5851d4232383ac7baadc11d908f7ba00e"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.12/zsxq-bridge_v0.1.12_darwin_amd64.tar.gz"
+      sha256 "919f0f8ca566fdd95622b8cb62b4dd3edc70531b75763df2db8c35627f585e12"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.10/zsxq-bridge_v0.1.10_linux_arm64.tar.gz"
-      sha256 "0602f39a809baf38d49d6053e1f0a2ba6472959744bec4c7078a5f4e5a37f98f"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.12/zsxq-bridge_v0.1.12_linux_arm64.tar.gz"
+      sha256 "ce69f89543a8f6800ed44797db4b78d32960932811f18d1a7d3472d7dd7d600d"
     end
     on_intel do
-      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.10/zsxq-bridge_v0.1.10_linux_amd64.tar.gz"
-      sha256 "4c6747d9c5c9673969e730c567ccf23c9fb4237888d93ffe7970a10b4f582fa4"
+      url "https://github.com/unnoo/homebrew-tap/releases/download/zsxq-bridge-v0.1.12/zsxq-bridge_v0.1.12_linux_amd64.tar.gz"
+      sha256 "6d01a9c4d3c77f86483a67d4c24a9b3a28ce9ce3b731bd3957c9897fbe110973"
     end
   end
 
@@ -40,7 +40,7 @@ class ZsxqBridge < Formula
     info = JSON.parse(shell_output("#{bin}/zsxq-bridge version --json"))
     assert_equal "v#{version}", info.fetch("version")
     assert_equal "production", info.fetch("environment")
-    assert_equal "dc6e0cf8a9f3b72e8bc5fc1d4aef66ffaca5144e", info.fetch("commit")
+    assert_equal "9a900aca03f44616075421ec125e8c0dede9a053", info.fetch("commit")
     assert_equal false, info.fetch("dirty")
     assert_equal "git", info.fetch("provenance")
     assert_match "zsxq-bridge", shell_output("#{bin}/zsxq-bridge --help")
